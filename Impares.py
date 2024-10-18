@@ -32,9 +32,16 @@ while opcion !=6:
             print(", ".join(map(str, numeros_impares)))
             
         case 3:
+            #PD: Hecho por mi
             filas =6
             columnas = 6
             matriz = [[0 for _ in range(columnas)] for _ in range(filas)]
+            for i in range(filas):
+                for j in range(columnas):
+                    if i > j:
+                        matriz[i][j] = 1
+            for fila in matriz:
+                print(fila)
                     
         case 4:
             num_lineas = int(input("ingrese la cantidadd de filas: "))
